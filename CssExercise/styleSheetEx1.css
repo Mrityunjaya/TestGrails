@@ -26,6 +26,6 @@ table tr:nth-child(even){
 	background-color: blue;
 	width: 300px;
 }
-table tr:nth-child(even) td:nth-child(even){
+table tr td:nth-child(even){
 	text-align: right;
 }

@@ -1,11 +1,33 @@
 - Add your custom alias
+	alias goToParent='cd ..'
 - create a soft link to a dir
+	 ln -s ~/Documents/TestGrails/ GrailsPath
 - export env_vars MY_HOME and set it to /home/<userName>
+	a. vi ~/.bashrc
+	b. export $MY_HOME=/home/mj
+	c. :wq --> new terminal tab/window
+	d. echo $MY_HOME
 - Add a folder ~/myScripts to PATH
+	#For temporary addition
+	PATH=$PATH:~/Documents/myScripts
+	echo $PATH
+	#For permanent addition
+	a. vi ~/.bashrc
+	b. PATH=$PATH:~/Documents/myScripts
+	c. :wq
 - install cheese from apt-get
+	sudo apt-get install cheese
+	[sudo] password for mj: 
 - find the occurances of "intelligrape" in the file a.txt
-- find number of files with the text "intelligrape" in folder "a1
+	grep intelligrape a.txt	
+- find number of files with the text "intelligrape" in folder "a1"
+	mj@mrityunjaya:~/Documents/TestGrails/LinuxExercise$ grep -l intelligrape *
+	a.txt
+	LinuxExercise.txt
+	mj@mrityunjaya:~/Documents/TestGrails/LinuxExercise$ grep -l intelligrape * |wc -l
+	2
 - find number of lines in a file
+	wc -l a.txt
 - How to find file changed after a certain date
 - copy file from server - intelligrape@downloads.intelligrape.com - igdefault : The complete /home/intelligrape/downloads.intelligrape.com/books folder
 - create a file using any command line editor(vim/pico) : c.txt, with the following text: "This is a sample file, welcome to intelligrape" and save the file and quit

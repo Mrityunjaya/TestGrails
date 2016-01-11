@@ -1,0 +1,15 @@
+- Add your custom alias
+- create a soft link to a dir
+- export env_vars MY_HOME and set it to /home/<userName>
+- Add a folder ~/myScripts to PATH
+- install cheese from apt-get
+- find the occurances of "intelligrape" in the file a.txt
+- find number of files with the text "intelligrape" in folder "a1
+- find number of lines in a file
+- How to find file changed after a certain date
+- copy file from server - intelligrape@downloads.intelligrape.com - igdefault : The complete /home/intelligrape/downloads.intelligrape.com/books folder
+- create a file using any command line editor(vim/pico) : c.txt, with the following text: "This is a sample file, welcome to intelligrape" and save the file and quit
+- copy file to server
+- rename dir b1 to YOUR_NAME_B
+- copy file from a.txt to /tmp/b.txt
+- Try getting dump of selected table instead of the whole database

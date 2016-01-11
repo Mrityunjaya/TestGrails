@@ -29,9 +29,21 @@
 - find number of lines in a file
 	wc -l a.txt
 - How to find file changed after a certain date
+	touch timestamp -d 2016-01-09
+	find /home/mj/Documents/ -newer timestamp
 - copy file from server - intelligrape@downloads.intelligrape.com - igdefault : The complete /home/intelligrape/downloads.intelligrape.com/books folder
+	- scp mj@10.149.235.21:/home/abc.txt /home/local
 - create a file using any command line editor(vim/pico) : c.txt, with the following text: "This is a sample file, welcome to intelligrape" and save the file and quit
+	a. vim c.txt
+	b. press i for inserting
+	c. Write the text This is a sample file, welcome to intelligrape
+	d. Press Escape
+	e. type :wq and press Enter
 - copy file to server
+	scp a.txt mj@10.149.235.21:/home/mj/folder
 - rename dir b1 to YOUR_NAME_B
+	mv b1 YOUR_NAME_B
 - copy file from a.txt to /tmp/b.txt
+	cp a.txt /tmp/b.txt
 - Try getting dump of selected table instead of the whole database
+	mysqldump -u root -proot databaseName > abc.sql

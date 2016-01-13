@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Exercise3</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<p>Hello world!</p>
+<form>
+    <input placeholder="Enter name" id="nameId" required>
+    <input placeholder="Copy name" id="nameCopyId" ><br>
+    <input placeholder="Enter Age" id="ageId" type="number"><br>
+
+    <button onclick="showNameBox()">Show Name Box</button>
+    <button type="submit" onclick="validateForm()">Submit Form</button>
+</form>
+
+
+<script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script src="js/application.js"></script> <!-- Externalising JS file -->
+
+<script>
+
+    $(document).ready(function () {
+        $("#nameId").hide();
+
+
+        $("#nameCopyId").mouseenter(function(){
+            $(this).css("background-color", "yellow")
+        });
+        $("#nameCopyId").mouseleave(function(){
+            $(this).css("background-color", "white")
+        });
+    });
+
+    function showNameBox() {
+        $("#nameId").show();
+    }
+
+    $("#nameId").keyup(function () {
+        $("#nameCopyId").val($("#nameId").val());
+    });
+
+
+    function validateForm() {
+        if ($("#ageId").val() < 18) {
+            alert("Age Should be greater than 18");
+            $("#nameId").hide();
+            $("#nameId").empty();
+            $("#nameCopyId").empty();
+
+        } else {
+            //action for submitting form data
+        }
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Exercise2</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<p>Hello world!</p>
+<input placeholder="principle" id="principleId">
+<input placeholder="rate" id="rateId">
+<input placeholder="time" id="timeId">
+<button onclick="getInterest()">Calculate Interest</button>
+<p id="interestId"></p>
+
+<input placeholder="input String" id="stringId">
+<button onclick="checkPalindrome()">Check Palindrome</button>
+<p id="isPalindromeId"></p>
+
+
+<input placeholder="Enter Circle Radius" id="radiusd">
+<button onclick="calculateArea()">Get Area</button>
+<p id="areaId"></p>
+<script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script src="js/application.js"></script> <!-- Externalising JS file -->
+
+<script>
+    function getInterest() {
+        var principle = $("#principleId").val();
+        var rate = $("#rateId").val();
+        var time = $("#timeId").val();
+        var interest = (principle * rate * time) / 100;
+        $("#interestId").text(" Interest ==> " + interest);
+    }
+
+    function checkPalindrome() {
+        var str = $("#stringId").val();
+        $("#isPalindromeId").text("isPalindrome ==> " + isPalindrome(str));
+    }
+    function calculateArea() {
+        var radius = $("#radiusd").val();
+        $("#areaId").text("area ==> " + circleArea(radius));
+    }
+
+
+</script>
+</body>
+</html>

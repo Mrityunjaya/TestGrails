@@ -1,16 +1,55 @@
-- Initialize a Git Repository
+EADnitialize a Git Repository
+	git init
 - Add files to the repository
+	git add <filename>
 - Unstage 1 file
+	git reset HEAD abc.txt
 - Commit the files
+	git commit -m "adding file a.txt"
 - Add a remote
+	git add remote origin
 - Undo changes to a particular file
+	git reset abc.txt
 - Push changes to Github
+	git push
 - Clone the repository
+	git clone <repository url>
 - Add changes to one of the copies and pull the changes in the other.
+	git commit -am "modifying file while in branch b1"
+	git push
+	git checkout b2
+	git pull origin b1
 - Add changes to both repos, try to push from both without taking a pull.
+	git add a1.txt
+	git commit -m "making first change in file a1.txt while in b1 branch"
+	git push 
+	git checkout b2
+	vi a1.txt
+	git add a1.txt
+	git commit -m "making second change infile a1.txt while in b2 branch"
+	git push
 - Check differences between a file and its staged version
+	git diff a1.txt
 - Ignore a few files to be checked in
+	vi .gitignore
+	in.gitignore file, add any file or wildcard which you want to ignore in the git repository
 - Create a new branch. Diverge them with commits
+	git branch -b newBranch
+	git checkout newBranch
+	git add newFile.txt
+	git commit -m "committing new file in new branch"
+	git push
 - Edit the same file at the same line on both branches and commit
+	git add a1.txt
+        git commit -m "making change in file a1.txt while in b1 branch"
+        git checkout b2
+        vi a1.txt
+        git add a1.txt
+        git commit -m "making same change infile a1.txt while in b2 branch"
+
 - Try merging and resolve merge conflicts
+	git merge b1
+	conflicts have to be resolved either manually or by accepting either branch's changes fully
 - Stash the changes and pop them
+	git stash
+	git stash pop	

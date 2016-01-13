@@ -1,0 +1,16 @@
+- Initialize a Git Repository
+- Add files to the repository
+- Unstage 1 file
+- Commit the files
+- Add a remote
+- Undo changes to a particular file
+- Push changes to Github
+- Clone the repository
+- Add changes to one of the copies and pull the changes in the other.
+- Add changes to both repos, try to push from both without taking a pull.
+- Check differences between a file and its staged version
+- Ignore a few files to be checked in
+- Create a new branch. Diverge them with commits
+- Edit the same file at the same line on both branches and commit
+- Try merging and resolve merge conflicts
+- Stash the changes and pop them

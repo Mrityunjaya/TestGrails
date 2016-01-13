@@ -45,3 +45,12 @@ function getDateObject() {
     dateObj.fullYear = dateInstance.getFullYear();
     return dateObj;
 }
+
+function getTime() {
+    var date = new Date();
+    var minutes = date.getMinutes()
+    var seconds = date.getSeconds();
+    var hours = date.getHours();
+    var time = hours + ":" + minutes + ":" + seconds
+    return time;
+}

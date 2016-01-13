@@ -35,3 +35,13 @@ function updateElementById(elemId, updateString) {
     var element = document.getElementById(elemId);
     element.innerHTML = updateString;
 }
+function getDateObject() {
+    var dateInstance = new Date()
+    var dateObj = new Object();
+    dateObj.date = dateInstance.getDate();
+    dateObj.day = dateInstance.getDay();
+    dateObj.year = dateInstance.getYear();
+    dateObj.month = dateInstance.getMonth();
+    dateObj.fullYear = dateInstance.getFullYear();
+    return dateObj;
+}

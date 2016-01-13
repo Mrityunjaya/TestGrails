@@ -54,3 +54,12 @@ function getTime() {
     var time = hours + ":" + minutes + ":" + seconds
     return time;
 }
+
+function isPalindrome(passedString) {
+    var reverseString = passedString.split('').reverse().join('');
+    return (reverseString == passedString);
+}
+
+function circleArea(radius) {
+    return Math.PI * radius * radius;
+}

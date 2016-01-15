@@ -14,3 +14,14 @@ public static void main(String[] args){
 //main()
 
 l2.groupBy{it%2 == 0}
+//class Person{
+//    String name;
+//    int age;
+//    String gender;
+//    String address;
+//}
+//person = new Person(name:"himanshu", "age":20, address: "R-2/123", gender: "male");
+//println person.address
+//person.@phone="9899191765";
+person.setAttribute("phone","9899191765");
+println person

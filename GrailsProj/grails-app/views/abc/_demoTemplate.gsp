@@ -1,0 +1,1 @@
+<p>Hi.... I am from template. My car is ${name}</p>

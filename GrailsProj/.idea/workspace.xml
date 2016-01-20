@@ -2,45 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8589699f-75eb-4e8a-9a60-cd8680a9cb50" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/abc/_demoTemplate.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/abc/abc.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/example/example.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../LinkSharingModule/grails-app/views/indexOld.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../LinkSharingModule/grails-app/views/layouts/mainOld.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../LinkSharingModule/grails-app/views/templates/_login.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../LinkSharingModule/grails-app/views/templates/_recentShares.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../LinkSharingModule/grails-app/views/templates/_register.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../LinkSharingModule/grails-app/views/templates/_shareTemplate.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../LinkSharingModule/src/groovy/org/code/app/UserRegistrationCO.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.asscache" afterPath="$PROJECT_DIR$/.asscache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3$_closure4$_closure7.class" afterPath="$PROJECT_DIR$/target/classes/DataSource$_run_closure3$_closure4$_closure7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/target/classes/BootStrap.class" afterPath="$PROJECT_DIR$/../LinkSharingModule/target/classes/BootStrap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/target/classes/BuildConfig$_run_closure1$_closure5.class" afterPath="$PROJECT_DIR$/../LinkSharingModule/target/classes/BuildConfig$_run_closure1$_closure5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/target/classes/UrlMappings$__clinit__closure1.class" afterPath="$PROJECT_DIR$/../LinkSharingModule/target/classes/UrlMappings$__clinit__closure1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/target/classes/com/src/main/activity/Subscription.class" afterPath="$PROJECT_DIR$/../LinkSharingModule/target/classes/com/src/main/activity/Subscription.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/target/classes/com/src/main/resource/DocumentResource.class" afterPath="$PROJECT_DIR$/../LinkSharingModule/target/classes/com/src/main/resource/DocumentResource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/target/classes/com/src/main/resource/LinkResource.class" afterPath="$PROJECT_DIR$/../LinkSharingModule/target/classes/com/src/main/resource/LinkResource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/target/classes/com/src/main/resource/ReadingItem.class" afterPath="$PROJECT_DIR$/../LinkSharingModule/target/classes/com/src/main/resource/ReadingItem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/target/classes/com/src/main/resource/Resource.class" afterPath="$PROJECT_DIR$/../LinkSharingModule/target/classes/com/src/main/resource/Resource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/target/classes/com/src/main/resource/ResourceRating.class" afterPath="$PROJECT_DIR$/../LinkSharingModule/target/classes/com/src/main/resource/ResourceRating.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/target/classes/com/src/main/resource/Topic.class" afterPath="$PROJECT_DIR$/../LinkSharingModule/target/classes/com/src/main/resource/Topic.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/target/classes/com/src/main/user/User.class" afterPath="$PROJECT_DIR$/../LinkSharingModule/target/classes/com/src/main/user/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/target/work/plugin-classes/JQueryResourceTagLib.class" afterPath="$PROJECT_DIR$/../LinkSharingModule/target/work/plugin-classes/JQueryResourceTagLib.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/target/work/plugin-classes/JQueryTagLib.class" afterPath="$PROJECT_DIR$/../LinkSharingModule/target/work/plugin-classes/JQueryTagLib.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/target/work/plugin-classes/asset/pipeline/grails/AssetMethodTagLib.class" afterPath="$PROJECT_DIR$/../LinkSharingModule/target/work/plugin-classes/asset/pipeline/grails/AssetMethodTagLib.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/target/work/plugin-classes/asset/pipeline/grails/AssetsTagLib.class" afterPath="$PROJECT_DIR$/../LinkSharingModule/target/work/plugin-classes/asset/pipeline/grails/AssetsTagLib.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/target/work/plugin-classes/grails/plugin/cache/CacheTagLib.class" afterPath="$PROJECT_DIR$/../LinkSharingModule/target/work/plugin-classes/grails/plugin/cache/CacheTagLib.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/target/work/plugin-classes/grails/plugin/databasemigration/DbdocController.class" afterPath="$PROJECT_DIR$/../LinkSharingModule/target/work/plugin-classes/grails/plugin/databasemigration/DbdocController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../LinkSharingModule/grails-app/utils/com/src/Constants.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../LinkSharingModule/grails-app/views/login/homePage.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../LinkSharingModule/grails-app/views/login/resetPswd.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../LinkSharingModule/src/groovy/org/code/app/UserResetPswdCO.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/target/classes/linksharingmodule/LoginController.class" afterPath="$PROJECT_DIR$/../LinkSharingModule/target/classes/linksharingmodule/LoginController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/target/classes/linksharingmodule/RegisterController.class" afterPath="$PROJECT_DIR$/../LinkSharingModule/target/classes/linksharingmodule/RegisterController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/LinkSharingModule-grailsPlugins.iml" afterPath="$PROJECT_DIR$/../LinkSharingModule/LinkSharingModule-grailsPlugins.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/grails-app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/../LinkSharingModule/grails-app/assets/stylesheets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/grails-app/conf/BuildConfig.groovy" afterPath="$PROJECT_DIR$/../LinkSharingModule/grails-app/conf/BuildConfig.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/grails-app/conf/UrlMappings.groovy" afterPath="$PROJECT_DIR$/../LinkSharingModule/grails-app/conf/UrlMappings.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/grails-app/controllers/linksharingmodule/LoginController.groovy" afterPath="$PROJECT_DIR$/../LinkSharingModule/grails-app/controllers/linksharingmodule/LoginController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/grails-app/controllers/linksharingmodule/RegisterController.groovy" afterPath="$PROJECT_DIR$/../LinkSharingModule/grails-app/controllers/linksharingmodule/RegisterController.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/grails-app/views/index.gsp" afterPath="$PROJECT_DIR$/../LinkSharingModule/grails-app/views/index.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/grails-app/views/layouts/main.gsp" afterPath="$PROJECT_DIR$/../LinkSharingModule/grails-app/views/layouts/main.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/grails-app/views/templates/_login.gsp" afterPath="$PROJECT_DIR$/../LinkSharingModule/grails-app/views/templates/_login.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LinkSharingModule/target/stacktrace.log" afterPath="$PROJECT_DIR$/../LinkSharingModule/target/stacktrace.log" />
     </list>
     <ignored path="GrailsProj.iws" />

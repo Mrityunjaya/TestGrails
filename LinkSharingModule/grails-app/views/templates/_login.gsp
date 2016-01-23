@@ -4,7 +4,7 @@
     </div>
 
     <div class="panel-body">
-        <g:uploadForm controller="login" method="post">
+        <g:uploadForm controller="login" action="home" method="post">
             <div class="input-group">
                 <input placeholder="Username/email" class="form-control" type="text" name="name"><br>
                 <input placeholder="password" class="form-control" type="password" name="pswd"><br>

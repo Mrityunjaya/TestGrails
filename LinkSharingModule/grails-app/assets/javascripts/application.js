@@ -10,11 +10,33 @@
 //= require_self
 
 if (typeof jQuery !== 'undefined') {
-	(function($) {
-		$(document).ajaxStart(function(){
-			$('#spinner').fadeIn();
-		}).ajaxStop(function(){
-			$('#spinner').fadeOut();
-		});
-	})(jQuery);
+    (function ($) {
+        $(document).ajaxStart(function () {
+            $('#spinner').fadeIn();
+        }).ajaxStop(function () {
+            $('#spinner').fadeOut();
+        });
+    })(jQuery);
+}
+
+$('.hover').mouseover(function () {
+    $('.text').css("visibility", "visible");
+});
+
+$('.hover').mouseout(function () {
+    $('.text').css("visibility", "hidden");
+});
+
+function createTopic() {
+    //alert("creating Topic!")
+    $("#popupContainer").showPopup()
+}
+function sendInvitation() {
+    alert("creating Invitation!")
+}
+function createResuorce() {
+    alert("creating Resource!")
+}
+function createDocument() {
+    alert("creating Document!")
 }

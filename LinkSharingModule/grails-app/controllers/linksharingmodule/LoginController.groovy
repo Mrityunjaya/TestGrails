@@ -9,12 +9,13 @@ class LoginController {
     def home() {
         String userName = params.name;
         String password = params.pswd;
-        User user = userService(userName)
-        println user
+        User user = userService.getUserByNameOrEmail(userName)
         if (user != null) {
             if (password.equals(user.password)) {
                 session["user"] = user.firstName
-                render(view: "/login/homePage",)
+                session["userId"] = user.id
+                Map userData = userService.getDataForUser(session['userId'])
+                render([view: "/login/homePage", model: userData])
             } else {
                 render(view: "/index", model: ["password": true])
             }
@@ -30,12 +31,10 @@ class LoginController {
     def resetPassword(UserResetPswdCO userResetPswdCO) {
         User user = userService.getUserByNameOrEmail(userResetPswdCO.name)
         if (!userResetPswdCO.validate()) {
-            println("hahaha")
             render(view: "/login/resetPswd", model: ["passwordNotReset": true])
         } else if (user == null) {
             render(view: "/login/resetPswd", model: ["nullUser": true])
         } else {
-            println("hahaha")
             if (userService.updatePassword(user, userResetPswdCO.pswd)) {
                 render(view: "/index", model: ["passwordReset": true])
             } else {

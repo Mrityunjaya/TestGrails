@@ -22,6 +22,7 @@
        style="display:${(userAdded) ? 'block' : 'none'}; color:${(userAdded) ? 'green' : 'red'}">
         ${(resetPswd) ? 'Password Reset' : 'Invalid Password: Either same as previous or less than 6 Characters long'}</p>
     <g:render template="/templates/recentShares"></g:render>
+    <g:render template="/templates/topPosts"></g:render>
 </div>
 
 <div class="col-md-4 col-lg-3">

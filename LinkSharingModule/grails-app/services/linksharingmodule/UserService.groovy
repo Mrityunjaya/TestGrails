@@ -1,11 +1,20 @@
 package linksharingmodule
 
+import com.src.main.activity.Subscription
+import com.src.main.resource.ReadingItem
+import com.src.main.resource.Resource
+import com.src.main.resource.ResourceRating
+import com.src.main.resource.Topic
 import com.src.main.user.User
 import grails.transaction.Transactional
-import org.code.app.UserResetPswdCO
 
 @Transactional
 class UserService {
+    def topicService;
+    def resourceService;
+    def subscriptionService;
+    def resourceRatingService;
+    def readingItemService;
 
     def addUser(User user) {
         try {
@@ -23,7 +32,7 @@ class UserService {
             user = User.findByEmailIlike(userName)
             if (user != null) {
                 int emailDomainStartIndex = user.email.indexOf('@')
-                println user.email.substring(0, emailDomainStartIndex) + "---UserService---okokokokok"
+//                println user.email.substring(0, emailDomainStartIndex) + "---UserService---okokokokok"
                 if (user.email.substring(0, emailDomainStartIndex).equals(userName)) {
                     return user
                 }
@@ -36,11 +45,26 @@ class UserService {
         try {
             user.password = newPswd
             user.save()
-            println(user.password + "------")
             return true;
         } catch (Exception e) {
 //            Throw new RuntimeException("Can not Update User", e.message)
             return false;
         }
+    }
+
+    def getUserById(long id) {
+        return User.findById(id);
+    }
+
+
+    def getDataForUser(long userId) {
+        User user = getUserById(userId)
+        List<Subscription> subscriptions = subscriptionService.getSubscriptionsByUser(user);
+        List<ReadingItem> readingItems = readingItemService.getReadingItemsByUser(user);
+        List<Topic> topics = topicService.getTopicsByUser(user);
+        List<Resource> resources = resourceService.getResourcesByUser(user);
+        List<ResourceRating> resourceRatings = resourceRatingService.getResourceRatingsByUser(user);
+        Map userData = ["subscriptions": subscriptions, "readingItems": readingItems, "topics": topics, "resources": resources, "resourceRatings": resourceRatings]
+        return userData;
     }
 }

@@ -24,12 +24,41 @@
 }
 
 /* align icon */
-.left-addon .glyphicon  { left:  0px;}
-.right-addon .glyphicon { right: 0px;}
+.left-addon .glyphicon {
+    left: 0px;
+}
+
+.right-addon .glyphicon {
+    right: 0px;
+}
+
+.glyphicon.glyphicon-search {
+    color: black;
+}
+
+.glyphicon {
+    color: white;
+}
+
+.white, .white a {
+    color: #fff;
+}
+
+.text {
+    position: relative;
+    bottom: 30px;
+    left: 0px;
+    visibility: hidden;
+}
 
 /* add padding  */
-.left-addon input  { padding-left:  30px; }
-.right-addon input { padding-right: 30px; }
+.left-addon input {
+    padding-left: 30px;
+}
+
+.right-addon input {
+    padding-right: 30px;
+}
 
 .navbar h2 {
     color: white;
@@ -37,7 +66,7 @@
     vertical-align: middle;
 }
 
-#search-form{
+#search-form {
     padding-right: 20px;
     padding-top: 15px;
 }

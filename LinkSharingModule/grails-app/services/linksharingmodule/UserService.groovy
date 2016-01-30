@@ -16,7 +16,7 @@ class UserService {
     def resourceRatingService;
     def readingItemService;
 
-    def addUser(User user) {
+    boolean addUser(User user) {
         try {
             user.save()
             return true;
@@ -61,10 +61,12 @@ class UserService {
         User user = getUserById(userId)
         List<Subscription> subscriptions = subscriptionService.getSubscriptionsByUser(user);
         List<ReadingItem> readingItems = readingItemService.getReadingItemsByUser(user);
-        List<Topic> topics = topicService.getTopicsByUser(user);
+        List<Topic> topicsCreated = topicService.getTopicsCreatedByUser(user);
+        List<Topic> topicsSubscribed = subscriptionService.getTopicsSubscribedByUser(user);
         List<Resource> resources = resourceService.getResourcesByUser(user);
         List<ResourceRating> resourceRatings = resourceRatingService.getResourceRatingsByUser(user);
-        Map userData = ["subscriptions": subscriptions, "readingItems": readingItems, "topics": topics, "resources": resources, "resourceRatings": resourceRatings]
+        Map userData = ["subscriptions"   : subscriptions, "readingItems": readingItems, "topicsCreated": topicsCreated,
+                        "topicsSubscribed": topicsSubscribed, "resources": resources, "resourceRatings": resourceRatings]
         return userData;
     }
 }

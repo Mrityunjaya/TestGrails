@@ -10,6 +10,6 @@ abstract class Resource {
     Date lastUpdated;
 
     static constraints = {
-        description maxSize: 1024
+        description maxSize: 1024, nullable: true
     }
 }

@@ -2,7 +2,7 @@
     <div class="panel-heading">
         <h3 class="panel-title">Trending</h3>
     </div>
-    ${tmplObjects}
+    ${topics}
     <div class="panel-body">
         <g:render template="/templates/shareTemplate" model="[values: tmplObjects]"></g:render>
     </div>

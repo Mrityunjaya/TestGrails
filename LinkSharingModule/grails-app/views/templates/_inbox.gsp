@@ -1,6 +1,6 @@
 <div class="panel panel-default">
     <div class="panel-heading">
-        <h3 class="panel-title">Recent Shares</h3>
+        <h3 class="panel-title">Inbox</h3>
     </div>
     ${tmplObjects}
     <div class="panel-body">

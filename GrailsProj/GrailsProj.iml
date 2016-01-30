@@ -124,5 +124,6 @@
       </library>
     </orderEntry>
     <orderEntry type="module" module-name="GrailsProj-grailsPlugins" />
+    <orderEntry type="library" name="groovy-2.4.5" level="application" />
   </component>
 </module>
